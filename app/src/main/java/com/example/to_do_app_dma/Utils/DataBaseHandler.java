@@ -97,7 +97,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
         cv.put(TASK, task);
         db.update(TODO_TABLE, cv, ID + "= ?", new String[]{String.valueOf(id)});
     }
-
+//So a task can be completed
     public void deleteTask(int id) {
         db.delete(TODO_TABLE, ID + "= ?", new String[]{String.valueOf(id)});
     }
